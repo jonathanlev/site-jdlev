@@ -1,7 +1,13 @@
+/* gradient background heavily influenced by this pen https://codepen.io/gabriellewee/pen/zYGxNKa?editors=1100*/
+
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+}
+
+@use postcss-preset-env {
+  stage: 0;
 }
 
 body {
@@ -11,6 +17,21 @@ body {
 	line-height: 1.6;
 	max-width: 60%;
 	margin: auto;
+
+	body {
+  background: linear-gradient(90deg, #de7119, #dee3e2);
+  min-height: 100vh;
+
+  &:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+    right: 0;
+		mask-image: linear-gradient(to bottom, transparent, black);
+		background: linear-gradient(90deg, #116979, #18b0b0);
+  }
 }
 
 .container {
@@ -70,12 +91,4 @@ textarea {
 	cursor: pointer;
 	outline: none;
 	margin-top: 1rem;
-}
-
-html {
-  background: url("black-glass-surface.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
