@@ -4,7 +4,7 @@ from send_mail import send_mail
 
 app = Flask(__name__)
 
-ENV = 'prod'
+ENV = 'prod' #sets current database to either production or development database
 
 if ENV == 'dev':
     app.debug = True
