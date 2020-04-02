@@ -33,7 +33,18 @@ class Feedback(db.Model):
 
 @app.route('/')
 def index():
-    return render_template('index.php')
+    return render_template('index.html')
+
+@app.route('/')
+def home():
+    return render_template('home.html')
+
+@app.route('/')
+def aboutme():
+    return render_template('aboutme.html')
+
+
+
 
 @app.route('/submit', methods=['POST'])
 def submit():
