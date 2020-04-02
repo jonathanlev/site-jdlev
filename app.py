@@ -35,19 +35,19 @@ class Feedback(db.Model):
 def index():
     return render_template('index.html')
 
-@app.route('/')
+@app.route('/home')
 def home():
     return render_template('home.html')
 
-@app.route('/')
+@app.route('/aboutme')
 def aboutme():
     return render_template('aboutme.html')
 
-@app.route('/')
+@app.route('/resume')
 def resume():
     return render_template('resume.html')
 
-@app.route('/')
+@app.route('/contact')
 def contact():
     return render_template('contact.html')
 
