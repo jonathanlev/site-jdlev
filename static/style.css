@@ -12,9 +12,10 @@ html, body {
 
 body {
 	/*background: #f4f4f4;*/
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Maisonneue, sans-serif;
 	color: #333;
 	line-height: 1.6;
+	-webkit-font-smoothing: antialiased;
 }
 
 .container {
@@ -117,5 +118,5 @@ a {
 
 #home { background: #116979; }
 #about { background: #dee3e2; }
-#services { background-color: #de7119; }
+#portfolio { background-color: #de7119; }
 #contact { background-color: #18b0b0; }
