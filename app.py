@@ -33,7 +33,7 @@ class Feedback(db.Model):
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('form.html')
 
 @app.route('/submit', methods=['POST'])
 def submit():
@@ -44,7 +44,7 @@ def submit():
         comments = request.form['comments']
         #print(customer, dealer, rating, comments)
         if customer == '' or dealer == '':
-            return render_template('index.html', message = 'Please enter required fields')
+            return render_template('form.html', message = 'Please enter required fields')
 
         if db.session.query(Feedback).filter(Feedback.customer == customer).count() == 0:
             data = Feedback(customer, dealer, rating, comments)
@@ -53,7 +53,7 @@ def submit():
             send_mail(customer,dealer,rating,comments)
 
             return render_template('success.html')
-        return render_template('index.html', message = 'You have already submitted feedback')
+        return render_template('form.html', message = 'You have already submitted feedback')
 
 if __name__ == '__main__':
     app.run()
