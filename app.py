@@ -43,6 +43,10 @@ def home():
 def aboutme():
     return render_template('aboutme.html')
 
+@app.route('/')
+def resume():
+    return render_template('resume.html')
+
 
 
 
@@ -55,7 +59,7 @@ def submit():
         comments = request.form['comments']
         #print(customer, dealer, rating, comments)
         if customer == '' or dealer == '':
-            return render_template('index.php', message = 'Please enter required fields')
+            return render_template('index.html', message = 'Please enter required fields')
 
         if db.session.query(Feedback).filter(Feedback.customer == customer).count() == 0:
             data = Feedback(customer, dealer, rating, comments)
@@ -63,8 +67,8 @@ def submit():
             db.session.commit()
             send_mail(customer,dealer,rating,comments)
 
-            return render_template('success.php')
-        return render_template('index.php', message = 'You have already submitted feedback')
+            return render_template('success.html')
+        return render_template('index.html', message = 'You have already submitted feedback')
 
 if __name__ == '__main__':
     app.run()
