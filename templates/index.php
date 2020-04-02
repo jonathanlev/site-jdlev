@@ -1,9 +1,9 @@
-<?php include "top.php" ?>
+<?php include "top.php"; ?>
     <div class="content">
-      <section id="home"><?php include "home.php"?></section>
-      <section id="about"><?php include "aboutme.php"?></section>
-      <section id="portfolio"><?php include "resume.php"?></section>
-      <section id="contact"><?php include "contact.php"?></section>
+      <section id="home"><?php include "home.php";?></section>
+      <section id="about"><?php include "aboutme.php";?></section>
+      <section id="portfolio"><?php include "resume.php";?></section>
+      <section id="contact"><?php include "contact.php";?></section>
     </div>
 
     <!-- JS -->
