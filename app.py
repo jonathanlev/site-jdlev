@@ -52,7 +52,7 @@ def submit():
             db.session.commit()
             send_mail(customer,dealer,rating,comments)
 
-            return render_template('success.html')
+            return render_template('success.php')
         return render_template('index.php', message = 'You have already submitted feedback')
 
 if __name__ == '__main__':
