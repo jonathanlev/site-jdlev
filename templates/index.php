@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <?php include "top.php" ?>
     <div class="content">
       <section id="home"><?php include "home.php"?></section>
