@@ -4,7 +4,7 @@ from send_mail import send_mail
 
 app = Flask(__name__)
 
-ENV = 'prod' #sets current database to either production or development database
+ENV = 'dev' #sets current database to either production or development database
 
 if ENV == 'dev':
     app.debug = True
@@ -35,19 +35,19 @@ class Feedback(db.Model):
 def index():
     return render_template('index.html')
 
-@app.route('/home')
+@app.route('/#home')
 def home():
     return render_template('home.html')
 
-@app.route('/aboutme')
+@app.route('/#aboutme')
 def aboutme():
     return render_template('aboutme.html')
 
-@app.route('/resume')
+@app.route('/#resume')
 def resume():
     return render_template('resume.html')
 
-@app.route('/contact')
+@app.route('/#contact')
 def contact():
     return render_template('contact.html')
 

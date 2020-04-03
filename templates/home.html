@@ -1,18 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Home page</title>
-</head>
-<body>
-    <ul id="navigation">
-    {% for item in navigation %}
-        <li><a href="{{ item.href }}">{{ item.caption }}</a></li>
-    {% endfor %}
-    </ul>
-
-    <h1>My Webpage</h1>
-    {{ a_variable }}
-
-    {# a comment #}
-</body>
-</html>
+{% extends "index.html" %}
+{% block content %}
+<div class ="home">
+    <h1>My Home page header</h1>
+    <p>test text here</p>
+</div>
+{% endblock %}
