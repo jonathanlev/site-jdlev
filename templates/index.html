@@ -31,9 +31,7 @@
 
     <div class="content">
       {% for item in ['home','aboutme','resume','contact'] %}
-      <section id="{{ item }}">
-        {% block content %}
-        {% endblock %}</section>
+      <section id="{{ item }}">{% block content %}{% endblock %}</section>
       {% endfor %}
     </div>
 

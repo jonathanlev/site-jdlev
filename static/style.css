@@ -82,7 +82,7 @@ header {
 	top: 0;
 	width: 100%;
 	height: 80px;
-	background: #fff;
+	background: #537791;
 }
 
 nav {
@@ -101,11 +101,11 @@ nav ul li {
 }
 
 a {
-	color: #4D4D4D;  font-family: sans-serif; text-transform: uppercase; text-decoration: none; line-height: 42px;
+	color: #c1c0b9;  font-family: sans-serif; text-transform: uppercase; text-decoration: none; line-height: 42px;
 }
 
 .active {
-	color: #2dbccb;
+	color: #e7e6e1;
 }
 
 
@@ -116,7 +116,7 @@ a {
 	width: 100%; height: 100%;
 }
 
-#home { background: #f7f6e7; }
-#aboutme { background: #f7f6e7; }
-#resume { background-color: #f7f6e7; }
-#contact { background-color: #f7f6e7; }
+#home { background: #999; }
+#aboutme { background: #111; }
+#resume { background-color: #333; }
+#contact { background-color: #555; }
