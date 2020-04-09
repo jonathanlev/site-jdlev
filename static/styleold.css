@@ -1,0 +1,180 @@
+ /* gradient background heavily influenced by this pen https://codepen.io/gabriellewee/pen/zYGxNKa?editors=1100*/
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	/*background: #f4f4f4;*/
+	font-family: Spectral, sans-serif;
+	color: #333;
+	line-height: 1.6;
+	-webkit-font-smoothing: antialiased;
+}
+
+.container {
+	max-width: 650px;
+	margin: 1rem auto;
+	overflow: auto;
+	padding: 0 2rem;
+}
+
+.content {
+	width: 100%;
+	height: 100%;
+	padding: 100px;
+
+}
+.content > section {
+	width: 100%;
+	height: 100%;
+	background-color: salmon;
+}
+
+p {
+	font-family: Spectral;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 23px;
+}
+
+blockquote {
+	font-family: Spectral;
+	font-size: 17.5px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 25px;
+}
+
+h1 {
+	color: #777;
+	margin-top: 15px;
+	/*font*/
+	font-family: Spectral;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 700;
+	line-height: 26.4px;
+}
+
+h3 {
+	margin-bottom: 10px;
+	/*font*/
+	font-family: Spectral;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 700;
+	line-height: 15.4px;
+}
+
+pre {
+	font-family: Spectral;
+	font-size: 13px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 18.5714px; }
+
+img {
+	width: 100%;
+}
+
+.message {
+	text-align: center;
+	padding: 5px;
+	border: #ccc dotted 2px;
+	margin-top: 2rem;
+}
+
+.logo {
+	width: 300px;
+	display: block;
+	margin: auto;
+}
+
+.form-group {
+	margin: 1rem 0;
+}
+
+input[type='text'],
+select,
+textarea {
+	display: block;
+	width: 100%;
+	padding: 0.4rem;
+	font-size: 1.2rem;
+	border: 1px solid #ccc;
+}
+
+.btn {
+	display: block;
+	width: 100%;
+	background: #333;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	margin-top: 1rem;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 80px;
+	background: #537791;
+}
+
+nav {
+	height: 80px;
+	margin: 0 auto;
+	float: right;
+}
+
+nav ul {
+	margin: 20px 0 0;
+}
+
+nav ul li {
+	display: inline-block;
+	margin: 0 50px 0 0;
+}
+
+a {
+	color: #c1c0b9;
+
+	text-decoration: none;
+	font-family: Spectral
+	font-size: 20px;
+	font-style: normal;
+	font-stretch: expanded;
+	font-weight: 400;
+	line-height: 42px; }
+}
+
+.active {
+	color: #e7e6e1;
+	text-decoration: none;
+}
+
+
+
+#home { background: #f7f6e7; }
+#aboutme { background: #f7f6e7; }
+#resume { background-color: #f7f6e7; }
+#contact { background-color: #f7f6e7; }

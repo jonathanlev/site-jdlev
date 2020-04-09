@@ -39,9 +39,9 @@ def index():
 def home():
     return render_template('home.html')
 
-@app.route('/#aboutme')
+@app.route('/#about')
 def aboutme():
-    return render_template('aboutme.html')
+    return render_template('about.html')
 
 @app.route('/#resume')
 def resume():

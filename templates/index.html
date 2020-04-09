@@ -4,23 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
     <!-- Standard CSS -->
     <link rel="stylesheet" href="../static/style.css" />
+    <!-- Google Font - Merriweather, Open Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,900;1,300;1,400&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../static/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../static/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../static/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../static/favicon/site.webmanifest">
 
-    <title>Please rate your service</title>
+
+    <title>Portfolio</title>
   </head>
 
   <!-- #########################    Body    ############################### -->
   <body>
 
     <!-- ######################     Main Navigation   ########################## -->
-  <header>
+  <header class="header">
     <nav>
       <ul>
-        {% for href, caption in [('#home','Home'),('#aboutme','About Me'),('#resume','Portfolio'),('#contact','Contact')] %}
+        {% for href, caption in [('#home','Home'),('#about','About'),('#resume','Portfolio'),('#contact','Contact')] %}
             {% if href == '#home' %}
-                <li><a class = "active" href="{{ href }}">{{ caption }}</a></li>
+                <li><a class="active" href="{{ href }}">{{ caption }}</a></li>
             {% else %}
                 <li><a href="{{ href }}">{{ caption }}</a></li>
             {% endif %}
@@ -28,12 +36,16 @@
       </ul>
     </nav>
   </header>
-
     <div class="content">
-      {% for item in ['home','aboutme','resume','contact'] %}
-      <section id="{{ item }}">{% block content %}{% endblock %}</section>
-      {% endfor %}
-    </div>
+      <section id="{{ "home" }}">{% include 'home.html' %}</section>
+      <section id="{{ "about" }}">{% include 'about.html' %}</section>
+      <section id="{{ "resume" }}">{% include 'resume.html' %}</section>
+      <section id="{{ "contact" }}">{% include 'contact.html' %}</section>
+    </div><!-- end of content-->
+    <!-- ######################     Footer   ########################## -->
+    <footer class="footer">
+        <p>Jonathan Leventhal  © 2020</p>
+    </footer>
 
   </body>
   </html>
