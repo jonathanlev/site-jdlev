@@ -47,9 +47,15 @@ def aboutme():
 def resume():
     return render_template('resume.html')
 
+@app.route('/#portfolio')
+def portfolio():
+    return render_template('portfolio.html')
+
 @app.route('/#contact')
 def contact():
     return render_template('contact.html')
+
+
 
 @app.route('/submit', methods=['POST'])
 def submit():

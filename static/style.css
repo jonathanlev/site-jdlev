@@ -160,7 +160,15 @@ pre {
 	line-height: 18.5714px; }
 
 img {
-	width: 100%;
+	width: 50%;
+	height: auto;
+
+}
+
+div img {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
 }
 
 .message {
@@ -207,6 +215,7 @@ textarea {
 #home { background: #111314; }
 #about { background: #111314; }
 #resume {  }
+#portfolio { background: #111314;}
 #contact {
 	max-width: 75%;
   margin: 12em auto;

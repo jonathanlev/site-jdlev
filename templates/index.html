@@ -26,7 +26,7 @@
   <header class="header">
     <nav>
       <ul>
-        {% for href, caption in [('#home','Home'),('#about','About'),('#resume','Portfolio'),('#contact','Contact')] %}
+        {% for href, caption in [('#home','Home'),('#about','About'),('#resume','Resume'),('#portfolio','Portfolio'),('#contact','Contact')] %}
             {% if href == '#home' %}
                 <li><a class="active" href="{{ href }}">{{ caption }}</a></li>
             {% else %}
@@ -40,6 +40,7 @@
       <section id="{{ "home" }}">{% include 'home.html' %}</section>
       <section id="{{ "about" }}">{% include 'about.html' %}</section>
       <section id="{{ "resume" }}">{% include 'resume.html' %}</section>
+      <section id="{{ "portfolio" }}">{% include 'portfolio.html' %}</section>
       <section id="{{ "contact" }}">{% include 'contact.html' %}</section>
     </div><!-- end of content-->
     <!-- ######################     Footer   ########################## -->
