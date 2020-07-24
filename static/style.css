@@ -66,6 +66,10 @@ a {
 	line-height: 46px;
 	letter-spacing: .4em;}
 
+.responsive {
+	max-width: 100%;
+  height: auto;
+}
 .active {
 	color: #FBDE44FF;
 }
